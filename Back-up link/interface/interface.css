@@ -1,0 +1,275 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../interface/IMG/l.webp') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.login-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff4500;
+}
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+}
+.instagram-button {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 15px;
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    margin: 15px 0;
+}
+
+.instagram-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.instagram-button:hover {
+    background-color: #ee7878;
+}
+.facebook-button {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 15px;
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    margin: 15px 0;
+}
+
+.facebook-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.facebook-button:hover {
+    background-color: #3eaeef;
+}
+.x-button {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 15px;
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    margin: 15px 0;
+}
+
+.x-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.x-button:hover {
+    background-color: #373434;
+}
+.google-button {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 15px;
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    margin: 15px 0;
+}
+
+.google-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.google-button:hover {
+    background-color: #f0f41d;
+}
+/* General button styling */
+.instagram-button,
+.facebook-button,
+.x-button,
+.google-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    position: relative;
+}
+
+/* Full-screen loading overlay */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+/* Loading spinner */
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 6px solid #1877F2;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Spinner animation */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+ .submit-button {
+            width: 100px;
+            padding: 10px;
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .submit-button:hover {
+            background-color: #ff4500;
+        }
+        .loading {
+            display: none;
+            width: 30px;
+            height: 30px;
+            border: 4px solid #ccc;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 10px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .success {
+            display: none;
+            font-size: 24px;
+            color: green;
+            margin-top: 10px;
+        }
+/* Ensure small space between input and button */
+/* Ensure small space between input and button */
+#competitionName {
+    margin-bottom: 5px; /* Small gap */
+}
+
+.submit-button {
+    margin-top: 0; /* Reduce gap */
+}
+
+/* Disabled social media buttons */
+.instagram-button, .facebook-button, .x-button, .google-button {
+    opacity: 0.5; /* Make them look disabled */
+    pointer-events: none; /* Disable clicks */
+}
+
+/* Loading spinner (Instagram-style) */
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 5px solid #1877F2;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Disabled submit button */
+.submit-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+
